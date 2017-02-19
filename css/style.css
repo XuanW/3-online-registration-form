@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 1.5em 0;
+  margin: 0;
+}
+
+.intro {
+  padding: 0.5em 0;
+  border-bottom: 4px solid #2D3945;
+  margin: 0;
+}
+
+form {
+  margin-top: -4px;
+
+}
+
+hr.divider {
+  border-top:2px solid #2d3945;
+  margin-bottom: 2em;
+}
+
+fieldset {
+  margin-top:2em;
+  padding: 1.5em 0;
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="telephone"],
+textarea,
+select {
+  background-color: #EFF0F1;
+  border: none;
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  height:auto;
+  border-radius: 4px;
+  margin: 10px 0 20px;
+}
+
+.contact input:last-child {
+  margin-bottom: 0;
+}
+
+#zip {
+  width: 50%;
+}
+
+label {
+  display: block;
+}
+
+label.light {
+  display: inline;
+  margin-left: 10px;
+}
+
+.newsletter_topic,
+.newsletter_format {
+  margin-bottom: 2em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 1.5em;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #46698b;
+  background-color: #E6F3FF;
+  transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+/*************************
+TYPOGRAPHY
+*************************/
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+
+header,
+footer,
+.intro {
+  text-align: center;
+}
+
+h1,
+button {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p,
+footer {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+footer {
+  font-style: italic;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 5px;
+}
+
+input::-ms-input-placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 5px;
+}
+
+input::-moz-placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 5px;
+}
+
+/*************************
+COlOR
+*************************/
+body {
+  color: #495D70;
+}
+
+p {
+  color: #A2A8AD;
+}
+
+header h1 {
+  background-color: #2D3945;
+  color: white;
+}
+
+h2,
+legend {
+  color: #2d3945;
+}
+
+button {
+  color: white;
+  background-color: #4EBBB5;
+}
+
+
+/*************************
+MEDIA QUERIES
+*************************/
+@media screen and (min-width: 768px) {
+  .content {
+    max-width: 600px;
+  }
+  .intro {
+    padding: 2em 0;
+  }
+
+  .contact_label {
+    display: inline-block;
+    width: 150px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="telephone"],
+  select {
+    width: calc(100% - 155px);
+  }
+
+  #zip {
+    width: 150px;
+  }
+
+}
