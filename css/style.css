@@ -36,7 +36,7 @@ fieldset {
 
 input[type="text"],
 input[type="email"],
-input[type="telephone"],
+input[type="tel"],
 textarea,
 select {
   background-color: #EFF0F1;
@@ -47,6 +47,10 @@ select {
   height:auto;
   border-radius: 4px;
   margin: 10px 0 20px;
+}
+
+select {
+  padding-top: 20px;
 }
 
 .contact input:last-child {
@@ -205,7 +209,7 @@ MEDIA QUERIES
 
   input[type="text"],
   input[type="email"],
-  input[type="telephone"],
+  input[type="tel"],
   select {
     width: calc(100% - 155px);
   }
